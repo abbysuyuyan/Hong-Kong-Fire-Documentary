@@ -47,7 +47,6 @@ def process_file(filepath):
         matches = re.finditer(r"\[([^\]]+)\]\((http[^)]+)\)", line)
 
         new_line = line
-        line_modified = False
 
         # We need to process matches in reverse order to not mess up indices if we were doing replacement by index
         # But here we are replacing strings.
@@ -58,7 +57,6 @@ def process_file(filepath):
 
         links_to_process = []
         for match in matches:
-            title = match.group(1)
             url = match.group(2)
 
             # Skip if it's already an archive link (though the line check should catch this)
@@ -80,7 +78,6 @@ def process_file(filepath):
                     replacement = f"{original_md} ([Archive]({archive_url_str}))"
 
                 new_line = new_line.replace(original_md, replacement)
-                line_modified = True
                 modified = True
                 # Sleep to be nice to the API (15 requests/min limit)
                 time.sleep(5)

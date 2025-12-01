@@ -133,7 +133,7 @@
 
 如需引用本資料庫的原創整理內容，請標示：
 
-```
+```text
 來源：11.26 大埔宏福苑火災紀錄庫 (Hong Kong Fire Documentary)
 網址：https://github.com/Hong-Kong-Emergency-Coordination-Hub/Hong-Kong-Fire-Documentary
 授權：CC BY-SA 4.0
@@ -372,7 +372,7 @@ This repository operates under a dual-licensing model:
 
 When using original content from this repository, please attribute as follows:
 
-```
+```text
 Source: 11.26 Tai Po Wang Fuk Court Fire Documentary (Hong Kong Fire Documentary)
 URL: https://github.com/Hong-Kong-Emergency-Coordination-Hub/Hong-Kong-Fire-Documentary
 License: CC BY-SA 4.0
@@ -450,7 +450,7 @@ This repository includes automation tools and CI/CD workflows for developers:
 - **`.github/workflows/`**: GitHub Actions workflows
   - `publish.yml`: Automatically builds and deploys the site to GitHub Pages
   - `lint.yml`: Automatically checks Markdown formatting and code style (Linting)
-  - `auto-review.yml`: Automatically request project reviwers to review Pull Request
+  - `auto-review.yml`: Automatically request project reviewers to review Pull Request
 - **`scripts/scraper/`**: Scheduled News Scraper
   - Scheduled to fetch the latest reports from major media outlets
   - Includes `scraper.py` (main script) and `scraped_urls.json` (history record)

@@ -27,7 +27,7 @@ async def _scrape_async():
             # Wait for content to appear
             try:
                 await page.wait_for_selector('a[href*="/"]', timeout=10000)
-            except:
+            except Exception:
                 pass
 
             await asyncio.sleep(3)
@@ -124,7 +124,7 @@ async def _scrape_async():
                             final_date = f"{date_str[0:4]}-{date_str[4:6]}-{date_str[6:8]}"
                             # Validate the date
                             datetime.datetime.strptime(final_date, "%Y-%m-%d")
-                        except:
+                        except Exception:
                             final_date = None
 
                 # Last resort: default to fire incident date

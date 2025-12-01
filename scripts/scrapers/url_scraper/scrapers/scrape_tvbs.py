@@ -60,7 +60,7 @@ async def _scrape_async():
                 # Wait for list to appear
                 try:
                     await page.wait_for_selector("li a div.txt_box", timeout=5000)
-                except:
+                except Exception:
                     print("Timeout waiting for list content.")
                     break
 

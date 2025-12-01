@@ -64,8 +64,8 @@ HH:MM (24-hour format)
 **主要來源 Primary Source:**
 
 **次要來源 Secondary Sources:**
--
 
+-
 -
 
 **來源類型 Source Type:**
@@ -85,7 +85,7 @@ HH:MM (24-hour format)
 
 **目前記錄 Current Entry:**
 
-```
+```markdown
 | 時間 | 事件 | 傷亡/狀態 | 來源 |
 |------|------|-----------|------|
 |      |      |           |      |
@@ -93,7 +93,7 @@ HH:MM (24-hour format)
 
 **建議修改 Proposed Change:**
 
-```
+```markdown
 | 時間 | 事件 | 傷亡/狀態 | 來源 |
 |------|------|-----------|------|
 |      |      |           |      |

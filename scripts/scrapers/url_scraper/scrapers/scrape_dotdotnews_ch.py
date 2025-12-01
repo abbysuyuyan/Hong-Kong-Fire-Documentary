@@ -81,7 +81,7 @@ def scrape():
             try:
                 date_obj = datetime.strptime(date_str, "%Y.%m.%d %H:%M")
                 date_display = date_obj.strftime("%Y-%m-%d")
-            except:
+            except Exception:
                 date_display = date_str
 
             articles.append((date_display, title, url))

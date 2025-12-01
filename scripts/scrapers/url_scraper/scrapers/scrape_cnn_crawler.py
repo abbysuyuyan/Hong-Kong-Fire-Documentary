@@ -27,7 +27,7 @@ def scrape():
                 year, month, day = parts[0], parts[1], parts[2]
                 if year.isdigit() and month.isdigit() and day.isdigit() and len(year) == 4:
                     return f"{year}-{month}-{day}"
-        except:
+        except Exception:
             pass
         return "Unknown"
 

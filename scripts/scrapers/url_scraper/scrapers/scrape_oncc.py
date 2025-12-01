@@ -19,7 +19,7 @@ def scrape():
             page.goto("https://hk.on.cc/search/index.html", timeout=30000, wait_until="commit")
             try:
                 page.wait_for_selector("#center-searchSubject", timeout=10000)
-            except:
+            except Exception:
                 pass
 
             selector = "#center-searchSubject"
