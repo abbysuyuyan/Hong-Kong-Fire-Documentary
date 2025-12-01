@@ -1,4 +1,4 @@
-# TVBS News / TVBS新聞
+# TVBS News
 
 ### 2025-11-26
 | links |
